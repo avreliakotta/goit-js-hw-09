@@ -5,13 +5,13 @@ startBtn.addEventListener('click', startChanges);
 stopBtn.addEventListener('click', stopChanges);
 
 let intervalId = null;
-isActiv = false;
+let isActive = false;
 function startChanges(event) {
   console.dir(event.target);
-  if (isActiv) {
+  if (isActive) {
     return;
   }
-  iActiv = true;
+  isActive = true;
   event.target.disabled = true;
   intervalId = setInterval(() => {
     // console.log('Починають змінюватись кольори боди');
